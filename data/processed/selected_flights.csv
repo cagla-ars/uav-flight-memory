@@ -1,0 +1,363 @@
+flight_id,class_set,selection_group,multi_annotation,annotation_count,seed,normal_limit,external_position_limit
+2018-05-26/16_18_10,Mechanical,Mechanical,False,1,42,80,120
+2018-05-26/16_19_20,External Position,External Position,False,1,42,80,120
+2018-05-26/16_48_10,External Position,External Position,False,1,42,80,120
+2018-05-26/16_50_01,External Position,External Position,False,1,42,80,120
+2018-05-30/18_19_18,External Position,External Position,False,1,42,80,120
+2018-05-31/16_07_48,External Position,External Position,False,1,42,80,120
+2018-06-02/14_29_29,Altitude,Altitude,False,1,42,80,120
+2018-06-02/14_42_50,External Position,External Position,False,1,42,80,120
+2018-06-02/14_56_43,External Position,External Position,False,1,42,80,120
+2018-06-04/18_05_54,Mechanical,Mechanical,False,1,42,80,120
+2018-06-04/18_17_58,Mechanical,Mechanical,False,1,42,80,120
+2018-06-04/18_21_53,Altitude,Altitude,False,1,42,80,120
+2018-06-04/19_00_07,External Position,External Position,False,1,42,80,120
+2018-06-12/19_38_14,External Position,External Position,False,1,42,80,120
+2018-06-12/19_44_57,Normal,Normal,False,1,42,80,120
+2018-06-12/19_55_27,External Position,External Position,False,1,42,80,120
+2018-07-03/18_57_00,Global Position,Global Position,False,1,42,80,120
+2018-07-04/19_31_44,Normal,Normal,False,1,42,80,120
+2018-07-04/19_39_24,External Position,External Position,False,1,42,80,120
+2018-07-09/19_20_08,External Position,External Position,False,1,42,80,120
+2018-07-09/19_36_34,Normal,Normal,False,1,42,80,120
+2018-07-09/20_03_46,Normal,Normal,False,1,42,80,120
+2018-07-23/sess009/log002,External Position,External Position,False,1,42,80,120
+2018-07-23/sess010/log001,External Position,External Position,False,1,42,80,120
+2018-07-23/sess011/log001,External Position,External Position,False,1,42,80,120
+2018-07-25/sess006/log001,External Position,External Position,False,1,42,80,120
+2018-07-25/sess007/log002,External Position,External Position,False,1,42,80,120
+2018-07-__/sess006/log001,External Position,External Position,False,1,42,80,120
+2018-07-__/sess007/log001,External Position,External Position,False,1,42,80,120
+2018-07-__/sess008/log001,External Position,External Position,False,1,42,80,120
+2018-07-__/sess010/log001,External Position,External Position,False,1,42,80,120
+2018-07-__/sess015/log005,Normal,Normal,False,1,42,80,120
+2018-08-19/sess071/log001,External Position,External Position,False,1,42,80,120
+2018-08-19/sess072/log001,External Position,External Position,False,1,42,80,120
+2018-08-19/sess078/log001,External Position,External Position,False,1,42,80,120
+2018-08-21/sess005/log001,Normal,Normal,False,1,42,80,120
+2018-08-31-09.01/2016-02-11/19_37_50,External Position,External Position,False,1,42,80,120
+2018-08-31-09.01/2016-02-11/19_39_21,External Position,External Position,False,1,42,80,120
+2018-08-31-09.01/2016-02-11/19_42_51,External Position,External Position,False,1,42,80,120
+2018-08-31-09.01/2016-02-11/19_46_53,External Position,External Position,False,1,42,80,120
+2018-08-31-09.01/part2/2018-09-01/19_43_56,External Position,External Position,False,1,42,80,120
+2018-08-31-09.01/part2/2018-09-01/19_51_23,External Position,External Position,False,1,42,80,120
+2018-09-03/2016-02-11/19_35_56,External Position,External Position,False,1,42,80,120
+2018-09-03/2018-09-03/13_17_32,External Position,External Position,False,1,42,80,120
+2018-09-03/2018-09-03/13_22_41,External Position,External Position,False,1,42,80,120
+2018-09-03/2018-09-03/14_21_00,External Position,External Position,False,1,42,80,120
+2018-09-03/2018-09-03/14_26_07,External Position,External Position,False,1,42,80,120
+2018-09-05/2016-02-11/19_34_40,External Position,External Position,False,1,42,80,120
+2018-09-06/13_26_57,External Position,External Position,False,1,42,80,120
+2018-09-06/13_41_28,External Position,External Position,False,1,42,80,120
+2018-09-06/14_03_07,Altitude|External Position,multi,True,2,42,80,120
+2018-09-06/14_18_57,External Position,External Position,False,1,42,80,120
+2018-09-06/14_21_27,External Position,External Position,False,1,42,80,120
+2018-09-06/14_27_29,External Position,External Position,False,1,42,80,120
+2018-09-06/14_36_29,External Position,External Position,False,1,42,80,120
+2018-09-06/14_38_29,External Position,External Position,False,1,42,80,120
+2018-09-07/12_39_45,External Position,External Position,False,1,42,80,120
+2018-09-07/12_59_34,External Position,External Position,False,1,42,80,120
+2018-09-07/13_02_17,External Position,External Position,False,1,42,80,120
+2018-09-07/13_10_36,External Position,External Position,False,1,42,80,120
+2018-09-07/13_23_31,External Position,External Position,False,1,42,80,120
+2018-09-07/13_26_48,External Position,External Position,False,1,42,80,120
+2018-09-07/13_29_47,External Position,External Position,False,1,42,80,120
+2018-09-07/13_39_11,External Position,External Position,False,2,42,80,120
+2018-09-07/14_10_59,External Position,External Position,False,1,42,80,120
+2018-09-08/17_20_54,External Position,External Position,False,1,42,80,120
+2018-09-08/17_26_26,External Position,External Position,False,1,42,80,120
+2018-09-08/17_36_24,External Position,External Position,False,1,42,80,120
+2018-09-08/17_48_46,External Position,External Position,False,1,42,80,120
+2018-09-08/17_56_44,Normal,Normal,False,1,42,80,120
+2018-09-08/17_58_39,External Position,External Position,False,1,42,80,120
+2018-09-08/18_01_14,External Position,External Position,False,1,42,80,120
+2018-09-08/18_03_08,External Position,External Position,False,1,42,80,120
+2018-09-08/18_07_55,External Position,External Position,False,1,42,80,120
+2018-09-08/18_37_09,External Position,External Position,False,1,42,80,120
+2018-09-08/18_40_19,External Position,External Position,False,1,42,80,120
+2018-09-08/18_51_39,External Position,External Position,False,1,42,80,120
+2018-09-08/18_54_01,External Position,External Position,False,1,42,80,120
+2018-09-10/07_36_58,External Position,External Position,False,1,42,80,120
+2018-09-10/07_58_30,Normal,Normal,False,1,42,80,120
+2018-09-10/19_07_23,External Position,External Position,False,1,42,80,120
+2018-09-10/19_19_16,External Position,External Position,False,1,42,80,120
+2018-09-11/07_29_26,Altitude,Altitude,False,1,42,80,120
+2018-09-11/07_31_37,Altitude,Altitude,False,1,42,80,120
+2018-09-11/07_36_30,Altitude,Altitude,False,1,42,80,120
+2018-09-11/07_45_17,Altitude,Altitude,False,1,42,80,120
+2018-09-11/08_30_17,Altitude,Altitude,False,1,42,80,120
+2018-09-12/19_28_20,External Position,External Position,False,1,42,80,120
+2018-09-14/07_36_08,Normal,Normal,False,1,42,80,120
+2018-09-14/07_52_46,Normal,Normal,False,1,42,80,120
+2018-09-15/17_16_19,External Position,External Position,False,1,42,80,120
+2018-09-15/17_36_51,External Position,External Position,False,1,42,80,120
+2018-09-15/18_16_47,External Position,External Position,False,1,42,80,120
+2018-09-15/18_21_12,External Position,External Position,False,1,42,80,120
+2018-09-15/18_27_16,External Position,External Position,False,1,42,80,120
+2018-09-15/18_41_01,External Position,External Position,False,1,42,80,120
+2018-09-17/07_46_13,External Position,External Position,False,1,42,80,120
+2018-09-17/07_50_34,External Position,External Position,False,1,42,80,120
+2018-09-17/08_17_29,Altitude,Altitude,False,1,42,80,120
+2018-09-17/08_24_05,External Position,External Position,False,1,42,80,120
+2018-09-17/18_40_08,External Position,External Position,False,1,42,80,120
+2018-09-18/07_38_12,Normal,Normal,False,1,42,80,120
+2018-09-18/07_48_03,Normal,Normal,False,1,42,80,120
+2018-09-18/08_39_17,Normal,Normal,False,1,42,80,120
+2018-09-18/08_48_35,Altitude,Altitude,False,1,42,80,120
+2018-09-18/08_51_40,Altitude,Altitude,False,1,42,80,120
+2018-09-18/09_02_23,External Position,External Position,False,1,42,80,120
+2018-09-19/07_32_22,External Position,External Position,False,1,42,80,120
+2018-09-19/07_38_07,External Position,External Position,False,1,42,80,120
+2018-09-19/07_41_00,External Position,External Position,False,1,42,80,120
+2018-09-19/07_57_41,Altitude,Altitude,False,1,42,80,120
+2018-09-19/09_05_21,External Position,External Position,False,1,42,80,120
+2018-09-19/15_58_27,Altitude,Altitude,False,1,42,80,120
+2018-09-21/19_36_27,Altitude,Altitude,False,1,42,80,120
+2018-09-21/20_35_04,Normal,Normal,False,1,42,80,120
+2018-09-25/07_34_04,Altitude,Altitude,False,1,42,80,120
+2018-09-25/07_44_21,External Position,External Position,False,1,42,80,120
+2018-09-25/07_50_00,External Position,External Position,False,1,42,80,120
+2018-09-25/07_52_26,Altitude,Altitude,False,1,42,80,120
+2018-09-27/08_08_56,External Position,External Position,False,1,42,80,120
+2018-09-27/08_12_10,Altitude,Altitude,False,1,42,80,120
+2018-09-27/08_20_24,Altitude,Altitude,False,1,42,80,120
+2018-09-27/08_27_10,Altitude,Altitude,False,1,42,80,120
+2018-09-27/08_32_37,Altitude,Altitude,False,1,42,80,120
+2018-09-27/08_37_20,Altitude,Altitude,False,1,42,80,120
+2018-10-01/07_55_01,Altitude,Altitude,False,1,42,80,120
+2018-10-01/08_05_14,Altitude,Altitude,False,1,42,80,120
+2018-10-01/08_08_19,Altitude,Altitude,False,1,42,80,120
+2018-10-01/08_10_03,External Position,External Position,False,1,42,80,120
+2018-10-01/08_46_57,Normal,Normal,False,1,42,80,120
+2018-10-02/07_49_36,Normal,Normal,False,1,42,80,120
+2018-10-02/08_08_56,Normal,Normal,False,1,42,80,120
+2018-10-04/07_01_22,Global Position,Global Position,False,1,42,80,120
+2018-10-04/07_01_29,Normal,Normal,False,1,42,80,120
+2018-10-04/07_14_51,Global Position,Global Position,False,1,42,80,120
+2018-10-04/07_17_05,Global Position,Global Position,False,1,42,80,120
+2018-10-04/07_22_10,Global Position,Global Position,False,2,42,80,120
+2018-10-04/07_25_27,Global Position|Mechanical,multi,True,2,42,80,120
+2018-10-04/07_29_45,External Position,External Position,False,1,42,80,120
+2018-10-04/07_30_31,Global Position,Global Position,False,1,42,80,120
+2018-10-04/07_33_16,Normal,Normal,False,1,42,80,120
+2018-10-04/07_54_23,Normal,Normal,False,1,42,80,120
+2018-11-20/15_16_18,Mechanical,Mechanical,False,1,42,80,120
+2018-11-20/15_20_01,Mechanical,Mechanical,False,1,42,80,120
+2018-11-20/15_21_47,Mechanical,Mechanical,False,1,42,80,120
+2018-11-20/15_25_52,Mechanical,Mechanical,False,1,42,80,120
+2018-11-20/15_29_13,Mechanical,Mechanical,False,1,42,80,120
+2018-11-28/07_56_05,External Position,External Position,False,1,42,80,120
+2018-11-28/08_47_22,Altitude,Altitude,False,1,42,80,120
+2018-11-28/08_59_11,External Position,External Position,False,1,42,80,120
+2018-12-03/07_31_50,Altitude,Altitude,False,1,42,80,120
+2018-12-03/07_43_15,Altitude,Altitude,False,1,42,80,120
+2018-12-04/07_49_33,Altitude,Altitude,False,1,42,80,120
+2018-12-04/08_01_22,Mechanical,Mechanical,False,1,42,80,120
+2018-12-04/08_06_40,Mechanical,Mechanical,False,1,42,80,120
+2018-12-04/08_13_32,Mechanical,Mechanical,False,1,42,80,120
+2018-12-04/08_53_58,Mechanical,Mechanical,False,1,42,80,120
+2018-12-10/08_30_26,Altitude,Altitude,False,1,42,80,120
+2018-12-10/08_38_24,Mechanical,Mechanical,False,1,42,80,120
+2018-12-10/08_56_21,Mechanical,Mechanical,False,1,42,80,120
+2018-12-10/09_08_26,Mechanical,Mechanical,False,1,42,80,120
+2018-12-10/09_20_57,Mechanical,Mechanical,False,1,42,80,120
+2018-12-12/08_12_25,Normal,Normal,False,1,42,80,120
+2018-12-12/08_24_39,Mechanical,Mechanical,False,1,42,80,120
+2018-12-12/08_33_25,Mechanical,Mechanical,False,1,42,80,120
+2018-12-14/07_34_35,Mechanical,Mechanical,False,1,42,80,120
+2018-12-14/07_46_36,Mechanical,Mechanical,False,1,42,80,120
+2018-12-14/08_32_31,Mechanical,Mechanical,False,1,42,80,120
+2018-12-18/08_03_22,External Position,External Position,False,1,42,80,120
+2018-12-18/08_18_02,Mechanical,Mechanical,False,1,42,80,120
+2018-12-19/08_14_47,Normal,Normal,False,1,42,80,120
+2018-12-19/08_53_47,Normal,Normal,False,1,42,80,120
+2018-12-19/09_33_46,External Position,External Position,False,1,42,80,120
+2018-12-20/07_25_57,External Position,External Position,False,1,42,80,120
+2018-12-20/07_54_50,External Position,External Position,False,1,42,80,120
+2018-12-20/08_06_15,External Position,External Position,False,1,42,80,120
+2018-12-20/08_46_30,External Position,External Position,False,1,42,80,120
+2018-12-20/08_57_35,Normal,Normal,False,1,42,80,120
+2018-12-26/09_24_37,Mechanical,Mechanical,False,1,42,80,120
+2018-12-27/08_57_51,Altitude,Altitude,False,1,42,80,120
+2018-12-27/09_30_59,Normal,Normal,False,1,42,80,120
+2018-12-28/08_13_51,Global Position,Global Position,False,1,42,80,120
+2018-12-31/11_05_14,Global Position,Global Position,False,1,42,80,120
+2019-01-03/07_45_20,Mechanical,Mechanical,False,1,42,80,120
+2019-01-04/08_01_09,Global Position,Global Position,False,1,42,80,120
+2019-01-04/08_35_09,Global Position,Global Position,False,1,42,80,120
+2019-01-04/08_41_03,Global Position,Global Position,False,1,42,80,120
+2019-01-04/08_48_19,Global Position,Global Position,False,1,42,80,120
+2019-01-04/08_52_38,Global Position,Global Position,False,1,42,80,120
+2019-01-04/09_01_28,Global Position,Global Position,False,1,42,80,120
+2019-01-04/09_03_36,Global Position,Global Position,False,1,42,80,120
+2019-01-04/09_05_55,Global Position,Global Position,False,1,42,80,120
+2019-01-04/09_10_41,Global Position,Global Position,False,1,42,80,120
+2019-01-04/09_22_14,Global Position,Global Position,False,1,42,80,120
+2019-01-04/09_24_22,Global Position,Global Position,False,1,42,80,120
+2019-01-07/07_29_12,Global Position,Global Position,False,1,42,80,120
+2019-01-07/08_27_59,Normal,Normal,False,1,42,80,120
+2019-01-07/08_35_59,Mechanical,Mechanical,False,1,42,80,120
+2019-01-07/08_40_52,Mechanical,Mechanical,False,1,42,80,120
+2019-01-08/08_30_41,Mechanical,Mechanical,False,1,42,80,120
+2019-01-08/08_39_45,Normal,Normal,False,1,42,80,120
+2019-01-08/09_05_30,External Position|Mechanical,multi,True,2,42,80,120
+2019-01-09/07_49_13,Normal,Normal,False,1,42,80,120
+2019-01-09/08_32_29,Mechanical,Mechanical,False,1,42,80,120
+2019-01-09/08_40_49,Mechanical,Mechanical,False,1,42,80,120
+2019-01-15/07_28_00,Mechanical,Mechanical,False,1,42,80,120
+2019-01-15/07_40_31,Mechanical,Mechanical,False,1,42,80,120
+2019-01-15/07_49_03,Mechanical,Mechanical,False,1,42,80,120
+2019-01-15/08_02_55,Normal,Normal,False,1,42,80,120
+2019-01-15/08_31_01,Altitude,Altitude,False,1,42,80,120
+2019-01-15/08_46_05,Global Position,Global Position,False,1,42,80,120
+2019-01-16/07_21_48,Global Position,Global Position,False,1,42,80,120
+2019-01-16/07_42_54,Global Position,Global Position,False,1,42,80,120
+2019-01-16/07_49_46,Global Position,Global Position,False,1,42,80,120
+2019-01-16/08_21_02,Altitude|Mechanical,multi,True,2,42,80,120
+2019-01-16/08_28_05,Global Position,Global Position,False,1,42,80,120
+2019-01-18/08_07_57,Global Position,Global Position,False,1,42,80,120
+2019-01-18/08_16_34,External Position,External Position,False,1,42,80,120
+2019-01-18/08_26_38,Global Position,Global Position,False,1,42,80,120
+2019-01-18/08_44_30,Global Position,Global Position,False,1,42,80,120
+2019-01-18/08_50_33,Global Position,Global Position,False,1,42,80,120
+2019-01-18/08_58_39,Global Position,Global Position,False,1,42,80,120
+2019-01-18/09_04_40,Global Position,Global Position,False,1,42,80,120
+2019-01-18/09_07_45,Global Position,Global Position,False,1,42,80,120
+2019-01-21/07_29_16,Normal,Normal,False,1,42,80,120
+2019-01-21/07_57_00,Altitude,Altitude,False,1,42,80,120
+2019-01-22/07_33_37,Normal,Normal,False,1,42,80,120
+2019-01-22/07_42_25,Normal,Normal,False,1,42,80,120
+2019-01-22/08_45_12,Altitude|External Position,multi,True,2,42,80,120
+2019-01-25/16_25_23,External Position,External Position,False,1,42,80,120
+2019-01-25/16_38_11,Global Position,Global Position,False,1,42,80,120
+2019-01-25/16_41_38,Global Position,Global Position,False,1,42,80,120
+2019-01-25/16_45_32,Global Position,Global Position,False,1,42,80,120
+2019-01-25/16_50_43,Global Position,Global Position,False,1,42,80,120
+2019-01-25/17_03_27,Global Position,Global Position,False,1,42,80,120
+2019-01-25/17_19_25,Global Position,Global Position,False,1,42,80,120
+2019-01-25/17_29_58,Global Position,Global Position,False,1,42,80,120
+2019-01-28/16_10_47,External Position,External Position,False,1,42,80,120
+2019-01-28/16_23_00,External Position,External Position,False,1,42,80,120
+2019-01-28/16_26_32,External Position,External Position,False,1,42,80,120
+2019-01-29/16_51_22,Normal,Normal,False,1,42,80,120
+2019-01-29/17_18_55,External Position,External Position,False,1,42,80,120
+2019-01-29/17_37_45,Altitude,Altitude,False,1,42,80,120
+2019-01-30/18_07_38,External Position,External Position,False,1,42,80,120
+2019-01-30/18_12_09,External Position,External Position,False,1,42,80,120
+2019-01-30/18_21_23,External Position,External Position,False,1,42,80,120
+2019-01-30/18_34_02,Global Position,Global Position,False,1,42,80,120
+2019-01-31/16_32_26,External Position,External Position,False,1,42,80,120
+2019-01-31/16_41_44,External Position,External Position,False,1,42,80,120
+2019-01-31/17_26_14,Normal,Normal,False,1,42,80,120
+2019-01-31/17_44_30,Normal,Normal,False,1,42,80,120
+2019-01-31/17_49_08,External Position,External Position,False,1,42,80,120
+2019-02-01/17_42_55,Mechanical,Mechanical,False,1,42,80,120
+2019-02-01/18_35_27,Mechanical,Mechanical,False,1,42,80,120
+2019-02-05/11_01_09,Altitude,Altitude,False,1,42,80,120
+2019-02-05/11_07_14,Normal,Normal,False,1,42,80,120
+2019-02-05/11_35_05,Altitude|Mechanical,multi,True,2,42,80,120
+2019-02-06/07_57_05,Altitude,Altitude,False,1,42,80,120
+2019-02-08/08_00_53,External Position,External Position,False,1,42,80,120
+2019-02-08/08_53_46,Normal,Normal,False,1,42,80,120
+2019-02-12/07_59_34,Normal,Normal,False,1,42,80,120
+2019-02-12/08_24_14,External Position,External Position,False,1,42,80,120
+2019-02-13/07_45_23,External Position,External Position,False,1,42,80,120
+2019-02-13/08_00_31,Normal,Normal,False,1,42,80,120
+2019-02-13/08_17_28,Normal,Normal,False,1,42,80,120
+2019-02-14/07_59_35,Normal,Normal,False,1,42,80,120
+2019-02-14/08_11_59,External Position,External Position,False,1,42,80,120
+2019-02-14/08_19_39,Normal,Normal,False,1,42,80,120
+2019-02-14/08_31_15,External Position,External Position,False,1,42,80,120
+2019-02-14/08_56_46,External Position,External Position,False,1,42,80,120
+2019-02-15/08_29_18,Mechanical,Mechanical,False,1,42,80,120
+2019-02-15/09_10_05,Normal,Normal,False,1,42,80,120
+2019-02-15/09_15_54,Altitude,Altitude,False,1,42,80,120
+2019-02-20/08_02_43,Normal,Normal,False,1,42,80,120
+2019-02-20/08_24_08,Normal,Normal,False,1,42,80,120
+2019-02-21/07_39_01,Normal,Normal,False,1,42,80,120
+2019-02-21/08_15_33,Normal,Normal,False,1,42,80,120
+2019-02-22/07_58_06,Normal,Normal,False,1,42,80,120
+2019-02-26/07_24_58,Normal,Normal,False,1,42,80,120
+2019-02-26/07_41_34,Normal,Normal,False,1,42,80,120
+2019-02-26/08_17_55,Mechanical,Mechanical,False,1,42,80,120
+2019-02-26/08_24_30,External Position|Mechanical,multi,True,2,42,80,120
+2019-02-27/07_45_45,Normal,Normal,False,1,42,80,120
+2019-02-27/07_53_27,Normal,Normal,False,1,42,80,120
+2019-03-01/07_22_36,Normal,Normal,False,1,42,80,120
+2019-03-01/07_36_24,Mechanical,Mechanical,False,1,42,80,120
+2019-03-04/08_04_13,Altitude,Altitude,False,1,42,80,120
+2019-03-04/08_07_05,Altitude,Altitude,False,1,42,80,120
+2019-03-04/08_10_05,Altitude,Altitude,False,1,42,80,120
+2019-03-04/08_14_41,Altitude,Altitude,False,1,42,80,120
+2019-03-04/08_18_44,Altitude,Altitude,False,1,42,80,120
+2019-03-04/08_23_15,Altitude,Altitude,False,1,42,80,120
+2019-03-04/08_28_37,Altitude,Altitude,False,1,42,80,120
+2019-03-04/08_31_08,Altitude,Altitude,False,1,42,80,120
+2019-03-04/08_33_41,Altitude,Altitude,False,1,42,80,120
+2019-03-04/08_36_56,Altitude,Altitude,False,1,42,80,120
+2019-03-04/08_38_53,Altitude,Altitude,False,1,42,80,120
+2019-03-04/08_41_17,Altitude,Altitude,False,1,42,80,120
+2019-03-04/08_44_55,Altitude,Altitude,False,1,42,80,120
+2019-03-05/07_36_09,Normal,Normal,False,1,42,80,120
+2019-03-05/07_40_49,Normal,Normal,False,1,42,80,120
+2019-03-05/08_00_16,Normal,Normal,False,1,42,80,120
+2019-03-07/07_52_21,External Position,External Position,False,1,42,80,120
+2019-03-11/07_31_26,External Position,External Position,False,1,42,80,120
+2019-03-11/07_38_50,Mechanical,Mechanical,False,1,42,80,120
+2019-03-12/07_38_42,External Position,External Position,False,1,42,80,120
+2019-03-12/07_45_43,Mechanical,Mechanical,False,1,42,80,120
+2019-03-13/07_30_37,Normal,Normal,False,1,42,80,120
+2019-03-13/07_57_08,Mechanical,Mechanical,False,1,42,80,120
+2019-03-15/11_05_20,Altitude,Altitude,False,1,42,80,120
+2019-03-15/11_14_48,Altitude,Altitude,False,1,42,80,120
+2019-03-15/11_19_19,Altitude,Altitude,False,1,42,80,120
+2019-03-15/11_26_05,Altitude,Altitude,False,1,42,80,120
+2019-03-19/07_49_49,Normal,Normal,False,1,42,80,120
+2019-03-20/07_40_46,Normal,Normal,False,1,42,80,120
+2019-03-22/07_46_23,Mechanical,Mechanical,False,1,42,80,120
+2019-04-12/10_12_17,Normal,Normal,False,1,42,80,120
+2019-04-17/07_45_26,Altitude,Altitude,False,1,42,80,120
+2019-04-17/07_56_36,Altitude,Altitude,False,1,42,80,120
+2019-04-17/08_03_14,Altitude,Altitude,False,1,42,80,120
+2019-04-17/08_09_54,Altitude,Altitude,False,1,42,80,120
+2019-05-20/07_46_25,Normal,Normal,False,1,42,80,120
+2019-05-21/07_40_35,Altitude,Altitude,False,1,42,80,120
+2019-05-21/07_54_18,Altitude,Altitude,False,1,42,80,120
+2019-05-21/08_04_49,Altitude,Altitude,False,1,42,80,120
+2019-05-21/08_22_58,Altitude,Altitude,False,1,42,80,120
+2019-05-23/07_34_26,Normal,Normal,False,1,42,80,120
+2019-05-23/07_41_00,Normal,Normal,False,1,42,80,120
+2019-05-23/07_51_49,Normal,Normal,False,1,42,80,120
+2019-05-24/19_21_36,Normal,Normal,False,1,42,80,120
+2019-05-28/07_26_15,Normal,Normal,False,1,42,80,120
+2019-05-28/07_32_34,Altitude,Altitude,False,1,42,80,120
+2019-05-28/07_38_10,Altitude,Altitude,False,1,42,80,120
+2019-06-07/16_44_02,Normal,Normal,False,1,42,80,120
+2019-08-01/08_47_43,Normal,Normal,False,1,42,80,120
+2019-12-02/09_40_27,Altitude,Altitude,False,1,42,80,120
+2021-10-06--/11_54_32,Altitude,Altitude,False,1,42,80,120
+2021-10-07_pid--/log_0_2021-10-1-17-16-16,Altitude,Altitude,False,1,42,80,120
+2021-10-07_pid--/log_1_2021-10-1-17-28-54,Altitude,Altitude,False,1,42,80,120
+2021-10-07_pid--/log_3_2021-10-1-16-15-52,Altitude,Altitude,False,1,42,80,120
+2022-10-22_dhl/03_51_03,External Position,External Position,False,1,42,80,120
+2023-08/2021-10-04/01_39_47,Altitude,Altitude,False,1,42,80,120
+2023-08/2022-06-15/08_23_52,External Position,External Position,False,1,42,80,120
+2023-08/2022-06-15/11_58_52,Normal,Normal,False,1,42,80,120
+2023-08/2022-09-06/14_15_05,Altitude,Altitude,False,1,42,80,120
+2023-08/2022-09-08/01_07_35,External Position,External Position,False,1,42,80,120
+2023-08/2022-09-09/03_47_04,Normal,Normal,False,1,42,80,120
+2023-08/2022-09-10/07_45_22,Normal,Normal,False,1,42,80,120
+2023-08/2022-09-11/02_58_17,Normal,Normal,False,1,42,80,120
+2023-08/2023-03-25/18_46_08,Normal,Normal,False,1,42,80,120
+2023-08/2023-04-14/12_28_58,Normal,Normal,False,1,42,80,120
+2023-08/sess006/log001,Altitude,Altitude,False,1,42,80,120
+2023-08/sess014/log001,Normal,Normal,False,1,42,80,120
+2023-08/sess017/log002,Normal,Normal,False,1,42,80,120
+2023-08/sess038/log001,Normal,Normal,False,1,42,80,120
+2023-08/sess040/log001,Normal,Normal,False,1,42,80,120
+2023-08/sess047/log001,Normal,Normal,False,1,42,80,120
+2023-08/sess051/log003,Normal,Normal,False,1,42,80,120
+2023-08/sess074/log001,Altitude,Altitude,False,1,42,80,120
+22_00_49,Altitude|Mechanical,multi,True,2,42,80,120
+log_13_2021-10-3-16-05-24,Altitude,Altitude,False,1,42,80,120
+log_31_2021-10-4-10-51-44,Altitude,Altitude,False,1,42,80,120

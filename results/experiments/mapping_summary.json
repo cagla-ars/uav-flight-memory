@@ -1,0 +1,41 @@
+{
+  "flight_count": 1396,
+  "annotation_counts": {
+    "Altitude": 78,
+    "External Position": 198,
+    "Global Position": 42,
+    "Mechanical": 47,
+    "Normal": 901,
+    "Uncategorized": 141
+  },
+  "range_counts": {
+    "Altitude": 145,
+    "External Position": 246,
+    "Global Position": 94,
+    "Mechanical": 75,
+    "Normal": 0,
+    "Uncategorized": 0
+  },
+  "flight_class_sets": {
+    "Normal": 900,
+    "External Position": 193,
+    "Uncategorized": 141,
+    "Altitude": 73,
+    "Mechanical": 41,
+    "Global Position": 40,
+    "Altitude + Mechanical": 3,
+    "Altitude + External Position": 2,
+    "External Position + Mechanical": 2,
+    "Global Position + Mechanical": 1
+  },
+  "multi_annotation_flights": [
+    "22_00_49",
+    "2018-09-06/14_03_07",
+    "2018-10-04/07_25_27",
+    "2019-01-08/09_05_30",
+    "2019-01-16/08_21_02",
+    "2019-01-22/08_45_12",
+    "2019-02-05/11_35_05",
+    "2019-02-26/08_24_30"
+  ]
+}

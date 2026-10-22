@@ -1,0 +1,2183 @@
+{
+  "dataset": "UAV-SEAD",
+  "seed": 42,
+  "feature_columns": [
+    "vehicle_local_position.x__mean",
+    "vehicle_local_position.x__std",
+    "vehicle_local_position.x__min",
+    "vehicle_local_position.x__max",
+    "vehicle_local_position.y__mean",
+    "vehicle_local_position.y__std",
+    "vehicle_local_position.y__min",
+    "vehicle_local_position.y__max",
+    "vehicle_local_position.z__mean",
+    "vehicle_local_position.z__std",
+    "vehicle_local_position.z__min",
+    "vehicle_local_position.z__max",
+    "vehicle_local_position.vx__mean",
+    "vehicle_local_position.vx__std",
+    "vehicle_local_position.vx__min",
+    "vehicle_local_position.vx__max",
+    "vehicle_local_position.vy__mean",
+    "vehicle_local_position.vy__std",
+    "vehicle_local_position.vy__min",
+    "vehicle_local_position.vy__max",
+    "vehicle_local_position.vz__mean",
+    "vehicle_local_position.vz__std",
+    "vehicle_local_position.vz__min",
+    "vehicle_local_position.vz__max"
+  ],
+  "feature_source_columns": [
+    "vehicle_local_position.x",
+    "vehicle_local_position.y",
+    "vehicle_local_position.z",
+    "vehicle_local_position.vx",
+    "vehicle_local_position.vy",
+    "vehicle_local_position.vz"
+  ],
+  "feature_statistics": [
+    "mean",
+    "std",
+    "min",
+    "max"
+  ],
+  "split_metadata": {
+    "0.8": {
+      "train_ratio": 0.8,
+      "seed": 42,
+      "train_flight_count": 285,
+      "test_flight_count": 71,
+      "train_window_count": 1612,
+      "test_window_count": 414,
+      "train_label_counts": {
+        "External Position": 131,
+        "Normal": 1190,
+        "Altitude": 126,
+        "Mechanical": 57,
+        "Global Position": 108
+      },
+      "test_label_counts": {
+        "Normal": 306,
+        "Mechanical": 13,
+        "External Position": 42,
+        "Altitude": 27,
+        "Global Position": 26
+      },
+      "warnings": []
+    },
+    "0.9": {
+      "train_ratio": 0.9,
+      "seed": 42,
+      "train_flight_count": 319,
+      "test_flight_count": 37,
+      "train_window_count": 1858,
+      "test_window_count": 168,
+      "train_label_counts": {
+        "External Position": 161,
+        "Normal": 1382,
+        "Altitude": 134,
+        "Mechanical": 58,
+        "Global Position": 123
+      },
+      "test_label_counts": {
+        "Normal": 114,
+        "Mechanical": 12,
+        "External Position": 12,
+        "Altitude": 19,
+        "Global Position": 11
+      },
+      "warnings": []
+    }
+  },
+  "experiments": [
+    {
+      "train_ratio": 0.8,
+      "k": 1,
+      "metric": "euclidean",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.7391304347826086,
+      "macro_precision": 0.5299441991030776,
+      "macro_recall": 0.4953434365199071,
+      "macro_f1": 0.5091398298165216,
+      "cv_macro_f1_mean": 0.42152248647773605,
+      "cv_macro_f1_std": 0.04850850383197647,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.8255451713395638,
+          "recall": 0.8660130718954249,
+          "f1-score": 0.8452950558213717,
+          "support": 306.0
+        },
+        "External Position": {
+          "precision": 0.5,
+          "recall": 0.35714285714285715,
+          "f1-score": 0.4166666666666667,
+          "support": 42.0
+        },
+        "Altitude": {
+          "precision": 0.5,
+          "recall": 0.4074074074074074,
+          "f1-score": 0.4489795918367347,
+          "support": 27.0
+        },
+        "Mechanical": {
+          "precision": 0.5384615384615384,
+          "recall": 0.5384615384615384,
+          "f1-score": 0.5384615384615384,
+          "support": 13.0
+        },
+        "Global Position": {
+          "precision": 0.2857142857142857,
+          "recall": 0.3076923076923077,
+          "f1-score": 0.2962962962962963,
+          "support": 26.0
+        },
+        "accuracy": 0.7391304347826086,
+        "macro avg": {
+          "precision": 0.5299441991030776,
+          "recall": 0.4953434365199071,
+          "f1-score": 0.5091398298165216,
+          "support": 414.0
+        },
+        "weighted avg": {
+          "precision": 0.7283705165663719,
+          "recall": 0.7391304347826086,
+          "f1-score": 0.7318513037793123,
+          "support": 414.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          265,
+          11,
+          8,
+          3,
+          19
+        ],
+        [
+          22,
+          15,
+          2,
+          2,
+          1
+        ],
+        [
+          16,
+          0,
+          11,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          1,
+          7,
+          0
+        ],
+        [
+          13,
+          4,
+          0,
+          1,
+          8
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.8,
+      "k": 3,
+      "metric": "euclidean",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.7367149758454107,
+      "macro_precision": 0.46786937884810226,
+      "macro_recall": 0.4087552969905911,
+      "macro_f1": 0.4285772521412712,
+      "cv_macro_f1_mean": 0.39371274081749746,
+      "cv_macro_f1_std": 0.042609916024808424,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.8328267477203647,
+          "recall": 0.8954248366013072,
+          "f1-score": 0.862992125984252,
+          "support": 306.0
+        },
+        "External Position": {
+          "precision": 0.38461538461538464,
+          "recall": 0.23809523809523808,
+          "f1-score": 0.29411764705882354,
+          "support": 42.0
+        },
+        "Altitude": {
+          "precision": 0.36,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.34615384615384615,
+          "support": 27.0
+        },
+        "Mechanical": {
+          "precision": 0.42857142857142855,
+          "recall": 0.23076923076923078,
+          "f1-score": 0.3,
+          "support": 13.0
+        },
+        "Global Position": {
+          "precision": 0.3333333333333333,
+          "recall": 0.34615384615384615,
+          "f1-score": 0.33962264150943394,
+          "support": 26.0
+        },
+        "accuracy": 0.7367149758454107,
+        "macro avg": {
+          "precision": 0.46786937884810226,
+          "recall": 0.4087552969905911,
+          "f1-score": 0.4285772521412712,
+          "support": 414.0
+        },
+        "weighted avg": {
+          "precision": 0.7124563434646691,
+          "recall": 0.7367149758454107,
+          "f1-score": 0.7210262663117171,
+          "support": 414.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          274,
+          8,
+          8,
+          1,
+          15
+        ],
+        [
+          23,
+          10,
+          6,
+          1,
+          2
+        ],
+        [
+          14,
+          1,
+          9,
+          2,
+          1
+        ],
+        [
+          7,
+          1,
+          2,
+          3,
+          0
+        ],
+        [
+          11,
+          6,
+          0,
+          0,
+          9
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.8,
+      "k": 5,
+      "metric": "euclidean",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.748792270531401,
+      "macro_precision": 0.49304140786749484,
+      "macro_recall": 0.4241087888146712,
+      "macro_f1": 0.4507064514889995,
+      "cv_macro_f1_mean": 0.35959182860705036,
+      "cv_macro_f1_std": 0.05140678986827435,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.8273809523809523,
+          "recall": 0.9084967320261438,
+          "f1-score": 0.8660436137071651,
+          "support": 306.0
+        },
+        "External Position": {
+          "precision": 0.44,
+          "recall": 0.2619047619047619,
+          "f1-score": 0.3283582089552239,
+          "support": 42.0
+        },
+        "Altitude": {
+          "precision": 0.34782608695652173,
+          "recall": 0.2962962962962963,
+          "f1-score": 0.32,
+          "support": 27.0
+        },
+        "Mechanical": {
+          "precision": 0.4,
+          "recall": 0.3076923076923077,
+          "f1-score": 0.34782608695652173,
+          "support": 13.0
+        },
+        "Global Position": {
+          "precision": 0.45,
+          "recall": 0.34615384615384615,
+          "f1-score": 0.391304347826087,
+          "support": 26.0
+        },
+        "accuracy": 0.748792270531401,
+        "macro avg": {
+          "precision": 0.49304140786749484,
+          "recall": 0.4241087888146712,
+          "f1-score": 0.4507064514889995,
+          "support": 414.0
+        },
+        "weighted avg": {
+          "precision": 0.7196856902811533,
+          "recall": 0.748792270531401,
+          "f1-score": 0.7297972046966786,
+          "support": 414.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          278,
+          6,
+          11,
+          1,
+          10
+        ],
+        [
+          24,
+          11,
+          3,
+          3,
+          1
+        ],
+        [
+          16,
+          1,
+          8,
+          2,
+          0
+        ],
+        [
+          6,
+          2,
+          1,
+          4,
+          0
+        ],
+        [
+          12,
+          5,
+          0,
+          0,
+          9
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.8,
+      "k": 7,
+      "metric": "euclidean",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.7729468599033816,
+      "macro_precision": 0.5582092152702306,
+      "macro_recall": 0.4562330915272092,
+      "macro_f1": 0.4956492707119818,
+      "cv_macro_f1_mean": 0.3368125263579544,
+      "cv_macro_f1_std": 0.038559076030578544,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.8348082595870207,
+          "recall": 0.9248366013071896,
+          "f1-score": 0.8775193798449612,
+          "support": 306.0
+        },
+        "External Position": {
+          "precision": 0.6296296296296297,
+          "recall": 0.40476190476190477,
+          "f1-score": 0.4927536231884058,
+          "support": 42.0
+        },
+        "Altitude": {
+          "precision": 0.35,
+          "recall": 0.25925925925925924,
+          "f1-score": 0.2978723404255319,
+          "support": 27.0
+        },
+        "Mechanical": {
+          "precision": 0.5555555555555556,
+          "recall": 0.38461538461538464,
+          "f1-score": 0.45454545454545453,
+          "support": 13.0
+        },
+        "Global Position": {
+          "precision": 0.42105263157894735,
+          "recall": 0.3076923076923077,
+          "f1-score": 0.35555555555555557,
+          "support": 26.0
+        },
+        "accuracy": 0.7729468599033816,
+        "macro avg": {
+          "precision": 0.5582092152702306,
+          "recall": 0.4562330915272092,
+          "f1-score": 0.4956492707119818,
+          "support": 414.0
+        },
+        "weighted avg": {
+          "precision": 0.7476216486022889,
+          "recall": 0.7729468599033816,
+          "f1-score": 0.7546199781437098,
+          "support": 414.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          283,
+          3,
+          10,
+          1,
+          9
+        ],
+        [
+          20,
+          17,
+          2,
+          1,
+          2
+        ],
+        [
+          17,
+          1,
+          7,
+          2,
+          0
+        ],
+        [
+          7,
+          0,
+          1,
+          5,
+          0
+        ],
+        [
+          12,
+          6,
+          0,
+          0,
+          8
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.8,
+      "k": 9,
+      "metric": "euclidean",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.7777777777777778,
+      "macro_precision": 0.5800466897492393,
+      "macro_recall": 0.4255620196796667,
+      "macro_f1": 0.47264380393965155,
+      "cv_macro_f1_mean": 0.3128511986614581,
+      "cv_macro_f1_std": 0.03275810518198689,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.8215297450424929,
+          "recall": 0.9477124183006536,
+          "f1-score": 0.8801213960546282,
+          "support": 306.0
+        },
+        "External Position": {
+          "precision": 0.5925925925925926,
+          "recall": 0.38095238095238093,
+          "f1-score": 0.463768115942029,
+          "support": 42.0
+        },
+        "Altitude": {
+          "precision": 0.375,
+          "recall": 0.2222222222222222,
+          "f1-score": 0.27906976744186046,
+          "support": 27.0
+        },
+        "Mechanical": {
+          "precision": 0.5555555555555556,
+          "recall": 0.38461538461538464,
+          "f1-score": 0.45454545454545453,
+          "support": 13.0
+        },
+        "Global Position": {
+          "precision": 0.5555555555555556,
+          "recall": 0.19230769230769232,
+          "f1-score": 0.2857142857142857,
+          "support": 26.0
+        },
+        "accuracy": 0.7777777777777778,
+        "macro avg": {
+          "precision": 0.5800466897492393,
+          "recall": 0.4255620196796667,
+          "f1-score": 0.47264380393965155,
+          "support": 414.0
+        },
+        "weighted avg": {
+          "precision": 0.7441271921221218,
+          "recall": 0.7777777777777778,
+          "f1-score": 0.7479902273451065,
+          "support": 414.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          290,
+          4,
+          8,
+          1,
+          3
+        ],
+        [
+          22,
+          16,
+          2,
+          1,
+          1
+        ],
+        [
+          18,
+          1,
+          6,
+          2,
+          0
+        ],
+        [
+          8,
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          15,
+          6,
+          0,
+          0,
+          5
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.8,
+      "k": 1,
+      "metric": "manhattan",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.7439613526570048,
+      "macro_precision": 0.5300559099960833,
+      "macro_recall": 0.46308506308506303,
+      "macro_f1": 0.48355265357001603,
+      "cv_macro_f1_mean": 0.41957635109193453,
+      "cv_macro_f1_std": 0.038645555049784924,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.8217522658610272,
+          "recall": 0.8888888888888888,
+          "f1-score": 0.8540031397174255,
+          "support": 306.0
+        },
+        "External Position": {
+          "precision": 0.47368421052631576,
+          "recall": 0.21428571428571427,
+          "f1-score": 0.29508196721311475,
+          "support": 42.0
+        },
+        "Altitude": {
+          "precision": 0.6190476190476191,
+          "recall": 0.48148148148148145,
+          "f1-score": 0.5416666666666666,
+          "support": 27.0
+        },
+        "Mechanical": {
+          "precision": 0.45454545454545453,
+          "recall": 0.38461538461538464,
+          "f1-score": 0.4166666666666667,
+          "support": 13.0
+        },
+        "Global Position": {
+          "precision": 0.28125,
+          "recall": 0.34615384615384615,
+          "f1-score": 0.3103448275862069,
+          "support": 26.0
+        },
+        "accuracy": 0.7439613526570048,
+        "macro avg": {
+          "precision": 0.5300559099960833,
+          "recall": 0.46308506308506303,
+          "f1-score": 0.48355265357001603,
+          "support": 414.0
+        },
+        "weighted avg": {
+          "precision": 0.7277459101907157,
+          "recall": 0.7439613526570048,
+          "f1-score": 0.7290556414502201,
+          "support": 414.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          272,
+          5,
+          6,
+          2,
+          21
+        ],
+        [
+          29,
+          9,
+          1,
+          2,
+          1
+        ],
+        [
+          12,
+          0,
+          13,
+          2,
+          0
+        ],
+        [
+          6,
+          0,
+          1,
+          5,
+          1
+        ],
+        [
+          12,
+          5,
+          0,
+          0,
+          9
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.8,
+      "k": 3,
+      "metric": "manhattan",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.748792270531401,
+      "macro_precision": 0.518043602983362,
+      "macro_recall": 0.4496612320141732,
+      "macro_f1": 0.47178486228583816,
+      "cv_macro_f1_mean": 0.39780972807125486,
+      "cv_macro_f1_std": 0.0455919658636195,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.8283132530120482,
+          "recall": 0.8986928104575164,
+          "f1-score": 0.8620689655172413,
+          "support": 306.0
+        },
+        "External Position": {
+          "precision": 0.42857142857142855,
+          "recall": 0.21428571428571427,
+          "f1-score": 0.2857142857142857,
+          "support": 42.0
+        },
+        "Altitude": {
+          "precision": 0.5,
+          "recall": 0.48148148148148145,
+          "f1-score": 0.49056603773584906,
+          "support": 27.0
+        },
+        "Mechanical": {
+          "precision": 0.5,
+          "recall": 0.3076923076923077,
+          "f1-score": 0.38095238095238093,
+          "support": 13.0
+        },
+        "Global Position": {
+          "precision": 0.3333333333333333,
+          "recall": 0.34615384615384615,
+          "f1-score": 0.33962264150943394,
+          "support": 26.0
+        },
+        "accuracy": 0.748792270531401,
+        "macro avg": {
+          "precision": 0.518043602983362,
+          "recall": 0.4496612320141732,
+          "f1-score": 0.47178486228583816,
+          "support": 414.0
+        },
+        "weighted avg": {
+          "precision": 0.7249529519042353,
+          "recall": 0.748792270531401,
+          "f1-score": 0.7314515847796379,
+          "support": 414.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          275,
+          5,
+          7,
+          1,
+          18
+        ],
+        [
+          27,
+          9,
+          5,
+          1,
+          0
+        ],
+        [
+          12,
+          0,
+          13,
+          2,
+          0
+        ],
+        [
+          7,
+          1,
+          1,
+          4,
+          0
+        ],
+        [
+          11,
+          6,
+          0,
+          0,
+          9
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.8,
+      "k": 5,
+      "metric": "manhattan",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.7560386473429952,
+      "macro_precision": 0.504554686317375,
+      "macro_recall": 0.4067514185161244,
+      "macro_f1": 0.43675122319238424,
+      "cv_macro_f1_mean": 0.3768662977470279,
+      "cv_macro_f1_std": 0.026423336756197593,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.8130311614730878,
+          "recall": 0.9379084967320261,
+          "f1-score": 0.8710166919575114,
+          "support": 306.0
+        },
+        "External Position": {
+          "precision": 0.35294117647058826,
+          "recall": 0.14285714285714285,
+          "f1-score": 0.2033898305084746,
+          "support": 42.0
+        },
+        "Altitude": {
+          "precision": 0.42857142857142855,
+          "recall": 0.2222222222222222,
+          "f1-score": 0.2926829268292683,
+          "support": 27.0
+        },
+        "Mechanical": {
+          "precision": 0.45454545454545453,
+          "recall": 0.38461538461538464,
+          "f1-score": 0.4166666666666667,
+          "support": 13.0
+        },
+        "Global Position": {
+          "precision": 0.47368421052631576,
+          "recall": 0.34615384615384615,
+          "f1-score": 0.4,
+          "support": 26.0
+        },
+        "accuracy": 0.7560386473429952,
+        "macro avg": {
+          "precision": 0.504554686317375,
+          "recall": 0.4067514185161244,
+          "f1-score": 0.43675122319238424,
+          "support": 414.0
+        },
+        "weighted avg": {
+          "precision": 0.7087134632288244,
+          "recall": 0.7560386473429952,
+          "f1-score": 0.7217212229744235,
+          "support": 414.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          287,
+          4,
+          4,
+          1,
+          10
+        ],
+        [
+          30,
+          6,
+          3,
+          3,
+          0
+        ],
+        [
+          19,
+          0,
+          6,
+          2,
+          0
+        ],
+        [
+          6,
+          1,
+          1,
+          5,
+          0
+        ],
+        [
+          11,
+          6,
+          0,
+          0,
+          9
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.8,
+      "k": 7,
+      "metric": "manhattan",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.7681159420289855,
+      "macro_precision": 0.567689603214465,
+      "macro_recall": 0.39353587588881705,
+      "macro_f1": 0.44131360333405195,
+      "cv_macro_f1_mean": 0.3469680151541846,
+      "cv_macro_f1_std": 0.03502953882587166,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.8066298342541437,
+          "recall": 0.954248366013072,
+          "f1-score": 0.874251497005988,
+          "support": 306.0
+        },
+        "External Position": {
+          "precision": 0.45,
+          "recall": 0.21428571428571427,
+          "f1-score": 0.2903225806451613,
+          "support": 42.0
+        },
+        "Altitude": {
+          "precision": 0.5454545454545454,
+          "recall": 0.2222222222222222,
+          "f1-score": 0.3157894736842105,
+          "support": 27.0
+        },
+        "Mechanical": {
+          "precision": 0.4,
+          "recall": 0.3076923076923077,
+          "f1-score": 0.34782608695652173,
+          "support": 13.0
+        },
+        "Global Position": {
+          "precision": 0.6363636363636364,
+          "recall": 0.2692307692307692,
+          "f1-score": 0.3783783783783784,
+          "support": 26.0
+        },
+        "accuracy": 0.7681159420289855,
+        "macro avg": {
+          "precision": 0.567689603214465,
+          "recall": 0.39353587588881705,
+          "f1-score": 0.44131360333405195,
+          "support": 414.0
+        },
+        "weighted avg": {
+          "precision": 0.7299552090688292,
+          "recall": 0.7681159420289855,
+          "f1-score": 0.7309188387166073,
+          "support": 414.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          292,
+          4,
+          3,
+          3,
+          4
+        ],
+        [
+          31,
+          9,
+          1,
+          1,
+          0
+        ],
+        [
+          18,
+          1,
+          6,
+          2,
+          0
+        ],
+        [
+          8,
+          0,
+          1,
+          4,
+          0
+        ],
+        [
+          13,
+          6,
+          0,
+          0,
+          7
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.8,
+      "k": 9,
+      "metric": "manhattan",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.751207729468599,
+      "macro_precision": 0.531989247311828,
+      "macro_recall": 0.34135842371136493,
+      "macro_f1": 0.3867185014222581,
+      "cv_macro_f1_mean": 0.33651846083102827,
+      "cv_macro_f1_std": 0.020514537795089213,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.7849462365591398,
+          "recall": 0.954248366013072,
+          "f1-score": 0.8613569321533924,
+          "support": 306.0
+        },
+        "External Position": {
+          "precision": 0.375,
+          "recall": 0.14285714285714285,
+          "f1-score": 0.20689655172413793,
+          "support": 42.0
+        },
+        "Altitude": {
+          "precision": 0.4,
+          "recall": 0.14814814814814814,
+          "f1-score": 0.21621621621621623,
+          "support": 27.0
+        },
+        "Mechanical": {
+          "precision": 0.5,
+          "recall": 0.23076923076923078,
+          "f1-score": 0.3157894736842105,
+          "support": 13.0
+        },
+        "Global Position": {
+          "precision": 0.6,
+          "recall": 0.23076923076923078,
+          "f1-score": 0.3333333333333333,
+          "support": 26.0
+        },
+        "accuracy": 0.751207729468599,
+        "macro avg": {
+          "precision": 0.531989247311828,
+          "recall": 0.34135842371136493,
+          "f1-score": 0.3867185014222581,
+          "support": 414.0
+        },
+        "weighted avg": {
+          "precision": 0.6976897304036155,
+          "recall": 0.751207729468599,
+          "f1-score": 0.7025957586322491,
+          "support": 414.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          292,
+          5,
+          4,
+          1,
+          4
+        ],
+        [
+          35,
+          6,
+          1,
+          0,
+          0
+        ],
+        [
+          20,
+          1,
+          4,
+          2,
+          0
+        ],
+        [
+          9,
+          0,
+          1,
+          3,
+          0
+        ],
+        [
+          16,
+          4,
+          0,
+          0,
+          6
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.9,
+      "k": 1,
+      "metric": "euclidean",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.6666666666666666,
+      "macro_precision": 0.5073897186878931,
+      "macro_recall": 0.4712121212121213,
+      "macro_f1": 0.4836650124135792,
+      "cv_macro_f1_mean": 0.4247744527264739,
+      "cv_macro_f1_std": 0.016213420939679972,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.7844827586206896,
+          "recall": 0.7982456140350878,
+          "f1-score": 0.7913043478260869,
+          "support": 114.0
+        },
+        "External Position": {
+          "precision": 0.23529411764705882,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.27586206896551724,
+          "support": 12.0
+        },
+        "Altitude": {
+          "precision": 0.4666666666666667,
+          "recall": 0.3684210526315789,
+          "f1-score": 0.4117647058823529,
+          "support": 19.0
+        },
+        "Mechanical": {
+          "precision": 0.7777777777777778,
+          "recall": 0.5833333333333334,
+          "f1-score": 0.6666666666666666,
+          "support": 12.0
+        },
+        "Global Position": {
+          "precision": 0.2727272727272727,
+          "recall": 0.2727272727272727,
+          "f1-score": 0.2727272727272727,
+          "support": 11.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.5073897186878931,
+          "recall": 0.4712121212121213,
+          "f1-score": 0.4836650124135792,
+          "support": 168.0
+        },
+        "weighted avg": {
+          "precision": 0.6753247850864484,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6687057731638383,
+          "support": 168.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          91,
+          8,
+          5,
+          2,
+          8
+        ],
+        [
+          6,
+          4,
+          2,
+          0,
+          0
+        ],
+        [
+          11,
+          1,
+          7,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          1,
+          7,
+          0
+        ],
+        [
+          4,
+          4,
+          0,
+          0,
+          3
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.9,
+      "k": 3,
+      "metric": "euclidean",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.6666666666666666,
+      "macro_precision": 0.5328793666226821,
+      "macro_recall": 0.3951355661881978,
+      "macro_f1": 0.4148159853515686,
+      "cv_macro_f1_mean": 0.37416621149471546,
+      "cv_macro_f1_std": 0.0274711850312126,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.7933884297520661,
+          "recall": 0.8421052631578947,
+          "f1-score": 0.8170212765957446,
+          "support": 114.0
+        },
+        "External Position": {
+          "precision": 0.23529411764705882,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.27586206896551724,
+          "support": 12.0
+        },
+        "Altitude": {
+          "precision": 0.35,
+          "recall": 0.3684210526315789,
+          "f1-score": 0.358974358974359,
+          "support": 19.0
+        },
+        "Mechanical": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 12.0
+        },
+        "Global Position": {
+          "precision": 0.2857142857142857,
+          "recall": 0.18181818181818182,
+          "f1-score": 0.2222222222222222,
+          "support": 11.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.5328793666226821,
+          "recall": 0.3951355661881978,
+          "f1-score": 0.4148159853515686,
+          "support": 168.0
+        },
+        "weighted avg": {
+          "precision": 0.6848968306330797,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6578317120503473,
+          "support": 168.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          96,
+          6,
+          8,
+          0,
+          4
+        ],
+        [
+          5,
+          4,
+          2,
+          0,
+          1
+        ],
+        [
+          12,
+          0,
+          7,
+          0,
+          0
+        ],
+        [
+          5,
+          1,
+          3,
+          3,
+          0
+        ],
+        [
+          3,
+          6,
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.9,
+      "k": 5,
+      "metric": "euclidean",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.7261904761904762,
+      "macro_precision": 0.523230258113979,
+      "macro_recall": 0.42145135566188197,
+      "macro_f1": 0.4537569155608372,
+      "cv_macro_f1_mean": 0.36876513203865985,
+      "cv_macro_f1_std": 0.019629909479015537,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.813953488372093,
+          "recall": 0.9210526315789473,
+          "f1-score": 0.8641975308641975,
+          "support": 114.0
+        },
+        "External Position": {
+          "precision": 0.23076923076923078,
+          "recall": 0.25,
+          "f1-score": 0.24,
+          "support": 12.0
+        },
+        "Altitude": {
+          "precision": 0.5714285714285714,
+          "recall": 0.42105263157894735,
+          "f1-score": 0.48484848484848486,
+          "support": 19.0
+        },
+        "Mechanical": {
+          "precision": 0.6666666666666666,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.4444444444444444,
+          "support": 12.0
+        },
+        "Global Position": {
+          "precision": 0.3333333333333333,
+          "recall": 0.18181818181818182,
+          "f1-score": 0.23529411764705882,
+          "support": 11.0
+        },
+        "accuracy": 0.7261904761904762,
+        "macro avg": {
+          "precision": 0.523230258113979,
+          "recall": 0.42145135566188197,
+          "f1-score": 0.4537569155608372,
+          "support": 168.0
+        },
+        "weighted avg": {
+          "precision": 0.7028793926634459,
+          "recall": 0.7261904761904762,
+          "f1-score": 0.7055488592743495,
+          "support": 168.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          105,
+          3,
+          2,
+          1,
+          3
+        ],
+        [
+          5,
+          3,
+          2,
+          1,
+          1
+        ],
+        [
+          11,
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          5,
+          1,
+          2,
+          4,
+          0
+        ],
+        [
+          3,
+          6,
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.9,
+      "k": 7,
+      "metric": "euclidean",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.7023809523809523,
+      "macro_precision": 0.5025641025641026,
+      "macro_recall": 0.39074960127591707,
+      "macro_f1": 0.4245898327537672,
+      "cv_macro_f1_mean": 0.36863739806534296,
+      "cv_macro_f1_std": 0.006907552020494865,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.7923076923076923,
+          "recall": 0.9035087719298246,
+          "f1-score": 0.8442622950819673,
+          "support": 114.0
+        },
+        "External Position": {
+          "precision": 0.15384615384615385,
+          "recall": 0.16666666666666666,
+          "f1-score": 0.16,
+          "support": 12.0
+        },
+        "Altitude": {
+          "precision": 0.5,
+          "recall": 0.3684210526315789,
+          "f1-score": 0.42424242424242425,
+          "support": 19.0
+        },
+        "Mechanical": {
+          "precision": 0.6666666666666666,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.4444444444444444,
+          "support": 12.0
+        },
+        "Global Position": {
+          "precision": 0.4,
+          "recall": 0.18181818181818182,
+          "f1-score": 0.25,
+          "support": 11.0
+        },
+        "accuracy": 0.7023809523809523,
+        "macro avg": {
+          "precision": 0.5025641025641026,
+          "recall": 0.39074960127591707,
+          "f1-score": 0.4245898327537672,
+          "support": 168.0
+        },
+        "weighted avg": {
+          "precision": 0.6789835164835165,
+          "recall": 0.7023809523809523,
+          "f1-score": 0.6804157204362122,
+          "support": 168.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          103,
+          4,
+          4,
+          1,
+          2
+        ],
+        [
+          6,
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          11,
+          1,
+          7,
+          0,
+          0
+        ],
+        [
+          6,
+          1,
+          1,
+          4,
+          0
+        ],
+        [
+          4,
+          5,
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.9,
+      "k": 9,
+      "metric": "euclidean",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.6964285714285714,
+      "macro_precision": 0.5454773750296138,
+      "macro_recall": 0.3940191387559808,
+      "macro_f1": 0.434131617907709,
+      "cv_macro_f1_mean": 0.3275102706550798,
+      "cv_macro_f1_std": 0.024415201361613743,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.7686567164179104,
+          "recall": 0.9035087719298246,
+          "f1-score": 0.8306451612903226,
+          "support": 114.0
+        },
+        "External Position": {
+          "precision": 0.21428571428571427,
+          "recall": 0.25,
+          "f1-score": 0.23076923076923078,
+          "support": 12.0
+        },
+        "Altitude": {
+          "precision": 0.4444444444444444,
+          "recall": 0.21052631578947367,
+          "f1-score": 0.2857142857142857,
+          "support": 19.0
+        },
+        "Mechanical": {
+          "precision": 0.8,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.47058823529411764,
+          "support": 12.0
+        },
+        "Global Position": {
+          "precision": 0.5,
+          "recall": 0.2727272727272727,
+          "f1-score": 0.35294117647058826,
+          "support": 11.0
+        },
+        "accuracy": 0.6964285714285714,
+        "macro avg": {
+          "precision": 0.5454773750296138,
+          "recall": 0.3940191387559808,
+          "f1-score": 0.434131617907709,
+          "support": 168.0
+        },
+        "weighted avg": {
+          "precision": 0.6770401112352072,
+          "recall": 0.6964285714285714,
+          "f1-score": 0.6691712044619338,
+          "support": 168.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          103,
+          5,
+          4,
+          0,
+          2
+        ],
+        [
+          6,
+          3,
+          1,
+          1,
+          1
+        ],
+        [
+          14,
+          1,
+          4,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          3,
+          5,
+          0,
+          0,
+          3
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.9,
+      "k": 1,
+      "metric": "manhattan",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.7083333333333334,
+      "macro_precision": 0.5547963322766473,
+      "macro_recall": 0.4490430622009569,
+      "macro_f1": 0.4850289967013762,
+      "cv_macro_f1_mean": 0.4238507839183412,
+      "cv_macro_f1_std": 0.002469321669644872,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.7874015748031497,
+          "recall": 0.8771929824561403,
+          "f1-score": 0.8298755186721992,
+          "support": 114.0
+        },
+        "External Position": {
+          "precision": 0.18181818181818182,
+          "recall": 0.16666666666666666,
+          "f1-score": 0.17391304347826086,
+          "support": 12.0
+        },
+        "Altitude": {
+          "precision": 0.5714285714285714,
+          "recall": 0.42105263157894735,
+          "f1-score": 0.48484848484848486,
+          "support": 19.0
+        },
+        "Mechanical": {
+          "precision": 0.8333333333333334,
+          "recall": 0.4166666666666667,
+          "f1-score": 0.5555555555555556,
+          "support": 12.0
+        },
+        "Global Position": {
+          "precision": 0.4,
+          "recall": 0.36363636363636365,
+          "f1-score": 0.38095238095238093,
+          "support": 11.0
+        },
+        "accuracy": 0.7083333333333334,
+        "macro avg": {
+          "precision": 0.5547963322766473,
+          "recall": 0.4490430622009569,
+          "f1-score": 0.4850289967013762,
+          "support": 168.0
+        },
+        "weighted avg": {
+          "precision": 0.6976353605150007,
+          "recall": 0.7083333333333334,
+          "f1-score": 0.6950120816644876,
+          "support": 168.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          100,
+          4,
+          4,
+          1,
+          5
+        ],
+        [
+          8,
+          2,
+          2,
+          0,
+          0
+        ],
+        [
+          11,
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0,
+          5,
+          1
+        ],
+        [
+          2,
+          5,
+          0,
+          0,
+          4
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.9,
+      "k": 3,
+      "metric": "manhattan",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.7083333333333334,
+      "macro_precision": 0.5644205128205129,
+      "macro_recall": 0.4249601275917064,
+      "macro_f1": 0.4564041727408698,
+      "cv_macro_f1_mean": 0.37952820963378736,
+      "cv_macro_f1_std": 0.03829829928872165,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.808,
+          "recall": 0.8859649122807017,
+          "f1-score": 0.8451882845188284,
+          "support": 114.0
+        },
+        "External Position": {
+          "precision": 0.23076923076923078,
+          "recall": 0.25,
+          "f1-score": 0.24,
+          "support": 12.0
+        },
+        "Altitude": {
+          "precision": 0.45,
+          "recall": 0.47368421052631576,
+          "f1-score": 0.46153846153846156,
+          "support": 19.0
+        },
+        "Mechanical": {
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.5,
+          "support": 12.0
+        },
+        "Global Position": {
+          "precision": 0.3333333333333333,
+          "recall": 0.18181818181818182,
+          "f1-score": 0.23529411764705882,
+          "support": 11.0
+        },
+        "accuracy": 0.7083333333333334,
+        "macro avg": {
+          "precision": 0.5644205128205129,
+          "recall": 0.4249601275917064,
+          "f1-score": 0.4564041727408698,
+          "support": 168.0
+        },
+        "weighted avg": {
+          "precision": 0.7089160561660562,
+          "recall": 0.7083333333333334,
+          "f1-score": 0.6939817291577075,
+          "support": 168.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          101,
+          3,
+          6,
+          0,
+          4
+        ],
+        [
+          7,
+          3,
+          2,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          9,
+          0,
+          0
+        ],
+        [
+          4,
+          1,
+          3,
+          4,
+          0
+        ],
+        [
+          3,
+          6,
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.9,
+      "k": 5,
+      "metric": "manhattan",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.7142857142857143,
+      "macro_precision": 0.5050395218816272,
+      "macro_recall": 0.38548644338118027,
+      "macro_f1": 0.4230116718506811,
+      "cv_macro_f1_mean": 0.3748829737383585,
+      "cv_macro_f1_std": 0.027093179665109178,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.7969924812030075,
+          "recall": 0.9298245614035088,
+          "f1-score": 0.8582995951417004,
+          "support": 114.0
+        },
+        "External Position": {
+          "precision": 0.1,
+          "recall": 0.08333333333333333,
+          "f1-score": 0.09090909090909091,
+          "support": 12.0
+        },
+        "Altitude": {
+          "precision": 0.46153846153846156,
+          "recall": 0.3157894736842105,
+          "f1-score": 0.375,
+          "support": 19.0
+        },
+        "Mechanical": {
+          "precision": 0.8333333333333334,
+          "recall": 0.4166666666666667,
+          "f1-score": 0.5555555555555556,
+          "support": 12.0
+        },
+        "Global Position": {
+          "precision": 0.3333333333333333,
+          "recall": 0.18181818181818182,
+          "f1-score": 0.23529411764705882,
+          "support": 11.0
+        },
+        "accuracy": 0.7142857142857143,
+        "macro avg": {
+          "precision": 0.5050395218816272,
+          "recall": 0.38548644338118027,
+          "f1-score": 0.4230116718506811,
+          "support": 168.0
+        },
+        "weighted avg": {
+          "precision": 0.6815061922204779,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.6864105053443289,
+          "support": 168.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          106,
+          2,
+          2,
+          0,
+          4
+        ],
+        [
+          7,
+          1,
+          3,
+          1,
+          0
+        ],
+        [
+          13,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          4,
+          1,
+          2,
+          5,
+          0
+        ],
+        [
+          3,
+          6,
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.9,
+      "k": 7,
+      "metric": "manhattan",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.7142857142857143,
+      "macro_precision": 0.5709392057218143,
+      "macro_recall": 0.38548644338118027,
+      "macro_f1": 0.43010424612255277,
+      "cv_macro_f1_mean": 0.3568459794972732,
+      "cv_macro_f1_std": 0.00830472236634034,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.7681159420289855,
+          "recall": 0.9298245614035088,
+          "f1-score": 0.8412698412698413,
+          "support": 114.0
+        },
+        "External Position": {
+          "precision": 0.18181818181818182,
+          "recall": 0.16666666666666666,
+          "f1-score": 0.17391304347826086,
+          "support": 12.0
+        },
+        "Altitude": {
+          "precision": 0.6666666666666666,
+          "recall": 0.3157894736842105,
+          "f1-score": 0.42857142857142855,
+          "support": 19.0
+        },
+        "Mechanical": {
+          "precision": 0.5714285714285714,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.42105263157894735,
+          "support": 12.0
+        },
+        "Global Position": {
+          "precision": 0.6666666666666666,
+          "recall": 0.18181818181818182,
+          "f1-score": 0.2857142857142857,
+          "support": 11.0
+        },
+        "accuracy": 0.7142857142857143,
+        "macro avg": {
+          "precision": 0.5709392057218143,
+          "recall": 0.38548644338118027,
+          "f1-score": 0.43010424612255277,
+          "support": 168.0
+        },
+        "weighted avg": {
+          "precision": 0.6940724906563416,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.6805360969712064,
+          "support": 168.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          106,
+          4,
+          1,
+          2,
+          1
+        ],
+        [
+          8,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          13,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          1,
+          4,
+          0
+        ],
+        [
+          4,
+          5,
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    },
+    {
+      "train_ratio": 0.9,
+      "k": 9,
+      "metric": "manhattan",
+      "seed": 42,
+      "scaler": "StandardScaler fit on train only",
+      "imputer": "SimpleImputer(median) fit on train only",
+      "accuracy": 0.6904761904761905,
+      "macro_precision": 0.5913938174501554,
+      "macro_recall": 0.3598086124401914,
+      "macro_f1": 0.40961433946488296,
+      "cv_macro_f1_mean": 0.3234953447596546,
+      "cv_macro_f1_std": 0.008010236213346468,
+      "cv_folds": 3,
+      "classification_report": {
+        "Normal": {
+          "precision": 0.7394366197183099,
+          "recall": 0.9210526315789473,
+          "f1-score": 0.8203125,
+          "support": 114.0
+        },
+        "External Position": {
+          "precision": 0.18181818181818182,
+          "recall": 0.16666666666666666,
+          "f1-score": 0.17391304347826086,
+          "support": 12.0
+        },
+        "Altitude": {
+          "precision": 0.2857142857142857,
+          "recall": 0.10526315789473684,
+          "f1-score": 0.15384615384615385,
+          "support": 19.0
+        },
+        "Mechanical": {
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.5,
+          "support": 12.0
+        },
+        "Global Position": {
+          "precision": 0.75,
+          "recall": 0.2727272727272727,
+          "f1-score": 0.4,
+          "support": 11.0
+        },
+        "accuracy": 0.6904761904761905,
+        "macro avg": {
+          "precision": 0.5913938174501554,
+          "recall": 0.3598086124401914,
+          "f1-score": 0.40961433946488296,
+          "support": 168.0
+        },
+        "weighted avg": {
+          "precision": 0.667596215823077,
+          "recall": 0.6904761904761905,
+          "f1-score": 0.6483670145524765,
+          "support": 168.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          105,
+          5,
+          3,
+          0,
+          1
+        ],
+        [
+          9,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          16,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          1,
+          4,
+          0
+        ],
+        [
+          5,
+          3,
+          0,
+          0,
+          3
+        ]
+      ],
+      "labels": [
+        "Normal",
+        "External Position",
+        "Altitude",
+        "Mechanical",
+        "Global Position"
+      ]
+    }
+  ],
+  "model_selection_rule": "Choose by train-only grouped CV macro F1; test metrics are reported for comparison, not for tuning.",
+  "selected_by_cv": {
+    "train_ratio": 0.9,
+    "k": 1,
+    "metric": "euclidean",
+    "selection_metric": "cv_macro_f1_mean",
+    "selection_value": 0.4247744527264739,
+    "note": ""
+  }
+}

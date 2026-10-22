@@ -1,0 +1,53 @@
+{
+  "window_seconds": 20,
+  "min_anomaly_coverage": 0.1,
+  "window_count": 2093,
+  "flight_count": 362,
+  "label_counts": {
+    "Normal": 1496,
+    "Mechanical": 70,
+    "Uncertain": 67,
+    "External Position": 173,
+    "Altitude": 153,
+    "Global Position": 134
+  },
+  "label_status_counts": {
+    "usable": 2026,
+    "uncertain_partial": 63,
+    "uncertain_mixed": 4
+  },
+  "anomaly_coverage_bins": {
+    "10-25%": 105,
+    "0-10%": 63,
+    "25-50%": 146,
+    "50-75%": 92,
+    "75-100%": 191
+  },
+  "mixed_overlap_window_count": 4,
+  "feature_set": [
+    "vehicle_local_position.x__mean",
+    "vehicle_local_position.x__std",
+    "vehicle_local_position.x__min",
+    "vehicle_local_position.x__max",
+    "vehicle_local_position.y__mean",
+    "vehicle_local_position.y__std",
+    "vehicle_local_position.y__min",
+    "vehicle_local_position.y__max",
+    "vehicle_local_position.z__mean",
+    "vehicle_local_position.z__std",
+    "vehicle_local_position.z__min",
+    "vehicle_local_position.z__max",
+    "vehicle_local_position.vx__mean",
+    "vehicle_local_position.vx__std",
+    "vehicle_local_position.vx__min",
+    "vehicle_local_position.vx__max",
+    "vehicle_local_position.vy__mean",
+    "vehicle_local_position.vy__std",
+    "vehicle_local_position.vy__min",
+    "vehicle_local_position.vy__max",
+    "vehicle_local_position.vz__mean",
+    "vehicle_local_position.vz__std",
+    "vehicle_local_position.vz__min",
+    "vehicle_local_position.vz__max"
+  ]
+}

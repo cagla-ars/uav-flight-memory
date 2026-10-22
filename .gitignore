@@ -1,0 +1,48 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+data/raw/csv_files_annotated/**/*.csv
+data/processed/*.parquet
+results/models/*.joblib
+results/reports/*.html
+!data/raw/mapping.json
+!data/raw/hf_tree.json
+
+# Gizli bilgiler
+.env
+.env.*
+!.env.example
+
+# Python önbelleği
+__pycache__/
+*.py[cod]
+
+# Sanal ortam
+.venv/
+venv/
+
+# Test ve analiz önbelleği
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Oluşturulan çıktılar
+dist/
+build/
+*.egg-info/
+
+# Model ve rapor çıktıları
+results/models/*.joblib
+results/reports/*.html
+
+# Ham uçuş kayıtları
+*.ulg
+# Projenin yedek/kopya klasörü
+uav_sade_check/
+/mapping.json
+# Web arayüzünü GitHub'a gönderme
+src/uav_flight_memory/web/
+data/processed/windows.csv
+data/processed/weka_windows.csv
